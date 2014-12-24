@@ -64,7 +64,7 @@ app.controller('UserProfileController', function($http, $scope, $routeParams, fl
 });
 
 
-app.controller('WishlistController', function($http, $scope, flash){
+app.controller('WishlistController', function($http, $scope, flash,  $routeParams){
     $scope.items = [];
     $scope.partitionedItems = [];
 

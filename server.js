@@ -2,16 +2,16 @@ var express  = require('express');
 var app      = express();
 var port     = process.env.PORT || 3000;
 var mongoose = require('mongoose');
-
+var User = require('./models/user');
 var cors = require('cors');
-app.use(cors());
-
 var bodyParser = require('body-parser');
+var configDB = require('./config/database.js');
+require('./config/cron'); //allows for CRON tasks
+
+app.use(cors());
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: false
 }));
-
-var configDB = require('./config/database.js');
 switch (process.env.NODE_ENV){
     case 'test':
         mongoose.connect(configDB.testUrl);
@@ -19,10 +19,6 @@ switch (process.env.NODE_ENV){
     default:
         mongoose.connect(configDB.url);
 }
-
-require('./config/cron');
-
-
 
 // routes ======================================================================
 var item = require('./routes/item');
@@ -34,8 +30,8 @@ app.use('/user', card);
 app.use('/user', user);
 app.use('/', express.static(__dirname + '/public')); //serve up homepage
 
-// launch ======================================================================
-app.listen(port);
+app.listen(port);   //launch
+
 switch (process.env.NODE_ENV) {
     case 'test':
         console.log('Test Server listening on port ' + port);
