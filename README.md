@@ -15,6 +15,7 @@ XMark Fitness Adjustable Dumbbell (50-Pound) | B003JVGEZM | 200
 Bowflex SelectTech 552 Adjustable Dumbbells (Pair) | B001ARYU58 | 400
 
 - Credit card info from Stripe can also be used.  Here are some numbers that can be added to the User's information panel
+
 Number |	Card type
 --- | ---
 4242424242424242|	Visa
