@@ -4,19 +4,19 @@ Wishlist allows users to add an Amazon product to their wishlist and include a p
 
 ## Installing Wishlist
 1.  Start by cloning the vagrant server and starting it up
-..```
-git clone https://github.com/MarkJessop/intouch-wishlist.git
-vagrant up
-```
+    ..```
+    git clone https://github.com/MarkJessop/intouch-wishlist.git
+    vagrant up
+    ```
 2. SSH into the vagrant server and change the directory to intouch-wishlist
-..```
-vagrant ssh
-cd intouch-wishlist
-```
+    ..```
+    vagrant ssh
+    cd intouch-wishlist
+    ```
 3. Start the node server
-..```
-npm start
-```
+    ..```
+           npm start
+           ```
 
 ## Using Wishlist
 
