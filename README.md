@@ -26,7 +26,7 @@ Due to time constrainsts, the application is not fully complete.  The following 
 . Zinc.io integration isn't in place, so items will not be shipped after purchase
 . Editing item price points
 . Deleting an item from the wishlist (these can both be done by extending the items route)
-. Adding items that don't have an ASIN number 
+. Adding items that don't have an ASIN number (books with only ISBN numbers won't work)
 
 ## Roadmap
 
