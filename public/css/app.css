@@ -25,3 +25,8 @@
 .purchaseButton {
     width: 100%;
 }
+
+.pageContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
