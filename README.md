@@ -3,10 +3,9 @@
 Wishlist allows users to add an Amazon product to their wishlist and include a price where they're willing to purchase the item.  The application keeps a look out for sales and when it finds a price below an item's price point, it prompts the user to purchase the item.  Items can be purchased directly from the application by a storing a credit card and address.
 
 ## Installing Wishlist
--  Start by downloading the vagrant package at [https://dl.dropboxusercontent.com/u/1499615/package.box]
+-  Start by downloading the vagrant package at [here](https://dl.dropboxusercontent.com/u/1499615/package.box) and adding the box
 ```
-git clone https://github.com/MarkJessop/intouch-wishlist.git
-cd intouch-wishlist
+vagrang box add package --packaged
 vagrant up
 ```
 - SSH into the vagrant server and change the directory to intouch-wishlist
