@@ -4,6 +4,15 @@ Wishlist allows users to add an Amazon product to their wishlist and include a p
 
 ## Using Wishlist
 
+- Add items by searching on Amazon and by copying and pasting their ASIN number (usually found near the bottom of the page).  Include a price you'd be willing to purchase.  If it's below Amazon's price a purchase button will appear
+
+- Example data
+
+Item | ASIN | Price
+Disney Frozen Sparkle Elsa Dol | B00C6Q1Z6E | 30
+XMark Fitness Adjustable Dumbbell (50-Pound) | B003JVGEZM | 200
+Bowflex SelectTech 552 Adjustable Dumbbells (Pair) | B001ARYU58 | 400
+
 ## How it Works
 
 Wishlist works by connecting to Amazon's public facing Product Advertising API.  When a user adds a product to their wishlist, the API is accessed and item details from Amazon are added to the item's entry in the database.  These details include, price, the item's name, and the Amazon store listing URL.
@@ -32,6 +41,7 @@ Due to time constrainsts, the application is not fully complete.  The following 
 ## Roadmap
 
 - User authentication to allow multiple users to login and add products.  Can be done through passport
+- Searching Amazon products on the site.  Using their API this wouldn't be hard to implament and would make for a better user experience then manually typing in an ASIN
 - Integrating application with Zinc.io to fully automate the purchasing process
 - Allows users the ability to manage their Wishlist better by updating price points and deleting items
 - Creating an order history so that User's can view what they have ordered in the past
