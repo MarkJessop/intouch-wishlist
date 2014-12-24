@@ -14,6 +14,24 @@ Disney Frozen Sparkle Elsa Dol | B00C6Q1Z6E | 30
 XMark Fitness Adjustable Dumbbell (50-Pound) | B003JVGEZM | 200
 Bowflex SelectTech 552 Adjustable Dumbbells (Pair) | B001ARYU58 | 400
 
+- Credit card info from Stripe can also be used.  Here are some numbers that can be added to the User's information panel
+Number |	Card type
+--- | ---
+4242424242424242|	Visa
+4012888888881881|	Visa
+4000056655665556|	Visa (debit)
+5555555555554444|	MasterCard
+5200828282828210|	MasterCard (debit)
+5105105105105100|	MasterCard (prepaid)
+378282246310005|	American Express
+371449635398431|	American Express
+6011111111111117|	Discover
+6011000990139424|	Discover
+30569309025904|	Diners Club
+38520000023237|	Diners Club
+3530111333300000|	JCB
+3566002020360505|	JCB
+
 ## How it Works
 
 Wishlist works by connecting to Amazon's public facing Product Advertising API.  When a user adds a product to their wishlist, the API is accessed and item details from Amazon are added to the item's entry in the database.  These details include, price, the item's name, and the Amazon store listing URL.
