@@ -6,9 +6,10 @@ Wishlist allows users to add an Amazon product to their wishlist and include a p
 -  Start by cloning the vagrant server and starting it up
 ```
 git clone https://github.com/MarkJessop/intouch-wishlist.git
+cd intouch-wishlist
 vagrant up
 ```
--SSH into the vagrant server and change the directory to intouch-wishlist
+- SSH into the vagrant server and change the directory to intouch-wishlist
 ```
 vagrant ssh
 cd intouch-wishlist
