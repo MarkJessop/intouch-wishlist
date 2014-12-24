@@ -2,7 +2,27 @@
 
 Wishlist allows users to add an Amazon product to their wishlist and include a price where they're willing to purchase the item.  The application keeps a look out for sales and when it finds a price below an item's price point, it prompts the user to purchase the item.  Items can be purchased directly from the application by a storing a credit card and address.
 
+## Installing Wishlist
+1.  Start by cloning the vagrant server and starting it up
+```
+git clone
+vagrant up
+```
+
+2. SSH into the vagrant server and change the directory to intouch-wishlist
+
+```
+vagrant ssh
+cd intouch-wishlist
+```
+
+3. Start the node server
+```
+npm start
+```
+
 ## Using Wishlist
+
 
 - Add items by searching on Amazon and by copying and pasting their ASIN number (usually found near the bottom of the page).  Include a price you'd be willing to purchase.  If it's below Amazon's price a purchase button will appear
 
@@ -57,6 +77,25 @@ Due to time constrainsts, the application is not fully complete.  The following 
 - Editing item price points
 - Deleting an item from the wishlist (these can both be done by extending the items route)
 - Adding items that don't have an ASIN number (books with only ISBN numbers won't work)
+
+## Testing
+
+This application has a series of unit tests that can be run.  To begin SSH back into the vagrant server and return to the intouch-wishlist directory
+
+```
+vagrant ssh
+cd intouch-wishlist
+```
+
+Shutdown the currently running node server (Ctrl-C) and start up the server with the test environment variable
+```
+npm run-script test
+```
+
+In another command window, run the tests
+```
+npm test
+```
 
 ## Roadmap
 
