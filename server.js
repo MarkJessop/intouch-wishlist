@@ -32,7 +32,14 @@ var user = require('./routes/user');
 app.use('/user', item);
 app.use('/user', card);
 app.use('/user', user);
+app.use('/', express.static(__dirname + '/public')); //serve up homepage
 
 // launch ======================================================================
 app.listen(port);
-console.log(process.env.NODE_ENV + ' Server listening on port ' + port);
+switch (process.env.NODE_ENV) {
+    case 'test':
+        console.log('Test Server listening on port ' + port);
+        break;
+    default:
+        console.log('Server listening on port ' + port);
+}
