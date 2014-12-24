@@ -16,24 +16,24 @@ Due to time constrainsts, the application is not fully complete.  The following 
 
 #### Works
 
-. Charging a user's credit card using Stripe
-. Adding products to the wishlist
-. Automatic updating of product prices
-. Updating user information including the credit card
+- Charging a user's credit card using Stripe
+- Adding products to the wishlist
+- Automatic updating of product prices
+- Updating user information including the credit card
 
 #### Doesn't Work
 
-. There's currently no user authentication.  All data resides on one user.
-. Zinc.io integration isn't in place, so items will not be shipped after purchase
-. Editing item price points
-. Deleting an item from the wishlist (these can both be done by extending the items route)
-. Adding items that don't have an ASIN number (books with only ISBN numbers won't work)
+- There's currently no user authentication.  All data resides on one user.
+- Zinc.io integration isn't in place, so items will not be shipped after purchase
+- Editing item price points
+- Deleting an item from the wishlist (these can both be done by extending the items route)
+- Adding items that don't have an ASIN number (books with only ISBN numbers won't work)
 
 ## Roadmap
 
-. User authentication to allow multiple users to login and add products.  Can be done through passport
-. Integrating application with Zinc.io to fully automate the purchasing process
-. Allows users the ability to manage their Wishlist better by updating price points and deleting items
-. Creating an order history so that User's can view what they have ordered in the past
-. Allowing more types of items to be added to the Wishlist (more then just items with ASIN)
-. Historic price tracking and visualization. Graphs and tables to show how a products price fluctuates over time
+- User authentication to allow multiple users to login and add products.  Can be done through passport
+- Integrating application with Zinc.io to fully automate the purchasing process
+- Allows users the ability to manage their Wishlist better by updating price points and deleting items
+- Creating an order history so that User's can view what they have ordered in the past
+- Allowing more types of items to be added to the Wishlist (more then just items with ASIN)
+- Historic price tracking and visualization. Graphs and tables to show how a products price fluctuates over time
