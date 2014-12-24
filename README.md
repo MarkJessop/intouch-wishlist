@@ -8,14 +8,11 @@ Wishlist allows users to add an Amazon product to their wishlist and include a p
 git clone
 vagrant up
 ```
-
 2. SSH into the vagrant server and change the directory to intouch-wishlist
-
 ```
 vagrant ssh
 cd intouch-wishlist
 ```
-
 3. Start the node server
 ```
 npm start
