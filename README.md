@@ -9,6 +9,7 @@ Wishlist allows users to add an Amazon product to their wishlist and include a p
 - Example data
 
 Item | ASIN | Price
+--- | --- | ---
 Disney Frozen Sparkle Elsa Dol | B00C6Q1Z6E | 30
 XMark Fitness Adjustable Dumbbell (50-Pound) | B003JVGEZM | 200
 Bowflex SelectTech 552 Adjustable Dumbbells (Pair) | B001ARYU58 | 400
