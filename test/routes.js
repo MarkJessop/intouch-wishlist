@@ -182,6 +182,7 @@ describe('Routing', function() {
                });
         });
         it('should add a new item to the user\'s item list', function(done){
+            this.timeout(0)
             var item = {
                 price: 30,
                 amazon_id: "B00B6JKRSY"
@@ -202,6 +203,7 @@ describe('Routing', function() {
         });
 
         it('should cause an error when adding an item with a bad ASIN', function(done){
+            this.timeout(0)
             var item = {
                 price: 30,
                 amazon_id: "B00B6JK"
@@ -225,6 +227,7 @@ describe('Routing', function() {
 
 
         it('should buy an item', function(done){
+            this.timeout(0)
             request(url)
                 .get('/user/' + username + '/items')
                 .send()
