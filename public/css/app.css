@@ -1,0 +1,27 @@
+.itemCost {
+    color: #4863ff;
+}
+
+.productImage {
+    height: 150px;
+}
+
+.itemDescription {
+    font-size: medium;
+}
+
+.addItemDescription{
+    font-style: italic;
+}
+
+.wishlistTitle {
+    text-align: center;
+}
+
+.submitButton {
+    width: 100%;
+}
+
+.purchaseButton {
+    width: 100%;
+}

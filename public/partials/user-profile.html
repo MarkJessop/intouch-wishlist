@@ -1,0 +1,65 @@
+<div class="container">
+    <div flash-alert="success" active-class="in" class="alert fade" ng-show="flash.message">
+        <strong class="alert-heading">Congrats!</strong>
+        <span class="alert-message">{{flash.message}}</span>
+    </div>
+    <!-- Subscribe to error flash messages. -->
+    <div flash-alert="error" active-class="in" class="alert fade" ng-show="flash.message">
+        <strong class="alert-heading">Boo!</strong>
+        <span class="alert-message">{{flash.message}}</span>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <h2>User Information</h2>
+            <form name="userForm" ng-submit="userForm.$valid && updateUser(user)" novalidate>
+                <fieldset class="form-group">
+                    Name: <input ng-model="user.name" type="text" class="form-control" title="brand" placeholder="Name" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    Email: <input ng-model="user.email" type="text" class="form-control" title="brand" placeholder="Email" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    Address: <input ng-model="user.address" type="text" class="form-control" title="brand" placeholder="Address" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    City:<input ng-model="user.city" type="text" class="form-control" title="brand" placeholder="City" required />
+                </fieldset>
+                <fieldset class="form-group">
+                   Province:  <input ng-model="user.province" type="text" class="form-control" title="brand" placeholder="Province" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    Country: <input ng-model="user.country" type="text" class="form-control" title="brand" placeholder="Country" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    Postal Code:<input ng-model="user.postal_code" type="text" class="form-control" title="brand" placeholder="Postal Code" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="submit" class="btn btn-primary submitButton" value="Update User" />
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <h2>Credit Card</h2>
+            <form name="cardForm" ng-submit="userForm.$valid && updateCard(user, card)" novalidate>
+                <fieldset class="form-group">
+                    Card Number: <input ng-model="card.number" type="text" class="form-control" title="brand" placeholder="Card Number" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    Expiration Month: <input ng-model="card.exp_month" type="number" min="1" max="12" class="form-control" title="brand" placeholder="Expiration Month" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    Expiration Year: <input ng-model="card.exp_year" type="number" min="2014" max="2050" class="form-control" title="brand" placeholder="Expiration Year" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    CVC: <input ng-model="card.cvc" type="number" min="100" max="999" class="form-control" title="brand" placeholder="CVC" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    Name on the card: <input ng-model="card.name" type="text" class="form-control" title="brand" placeholder="Name" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="submit" class="btn btn-primary submitButton" value="Update Card" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

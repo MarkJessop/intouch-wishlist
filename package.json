@@ -1,0 +1,29 @@
+{
+  "name": "intouch-mark",
+  "version": "0.0.0",
+  "description": "Application that allows for a user to add items that will automatically get purchased if they reach a specified price point",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Jessop",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.10.6",
+    "cors": "~2.5.2",
+    "mongoose": "~3.8.21",
+    "body-parser": "~1.10.0",
+    "aws-lib": "~0.3.0",
+    "cron": "~1.0.5",
+    "stripe": "~3.0.2"
+
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "should": "~4.4.1",
+    "supertest": "~0.15.0"
+  },
+  "scripts": {
+    "test": "mocha test"
+  }
+}
