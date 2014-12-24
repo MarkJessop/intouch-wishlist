@@ -26,7 +26,8 @@
   "scripts": {
     "test": "mocha test",
     "start": "node server.js",
-    "start-test" :"node server.js NODE_ENV=test",
+    "start-test" :"NODE_ENV=testnode server.js",
     "seed" : "node seed.js"
+
   }
 }
