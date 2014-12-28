@@ -5,7 +5,8 @@ Wishlist allows users to add an Amazon product to their wishlist and include a p
 ## Installing Wishlist
 -  Start by downloading the vagrant package at [here](https://dl.dropboxusercontent.com/u/1499615/package.box) and adding the box
 ```
-vagrang box add package --name packaged
+vagrant init hashicorp/precise32
+vagrang box add package.box --name packaged
 vagrant up
 ```
 - SSH into the vagrant server and change the directory to intouch-wishlist
