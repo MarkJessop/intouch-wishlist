@@ -3,16 +3,16 @@
 Wishlist allows users to add an Amazon product to their wishlist and include a price where they're willing to purchase the item.  The application keeps a look out for sales and when it finds a price below an item's price point, it prompts the user to purchase the item.  Items can be purchased directly from the application by a storing a credit card and address.
 
 ## Installing Wishlist
--  Start by downloading the vagrant package at [here](https://dl.dropboxusercontent.com/u/1499615/package.box) and adding the box
+-  Start by cloning the respository and starting the vagrant server
 ```
-vagrant init hashicorp/precise32
-vagrang box add package.box --name packaged
+git clone https://github.com/MarkJessop/intouch-wishlist.git
+cd intouch-wishlist
 vagrant up
 ```
-- SSH into the vagrant server and change the directory to intouch-wishlist
+- SSH into the vagrant server and change the directory to app
 ```
 vagrant ssh
-cd intouch-wishlist
+cd app
 ```
 - Start the node server
 ```
@@ -78,11 +78,11 @@ Due to time constrainsts, the application is not fully complete.  The following 
 
 ## Testing
 
-This application has a series of unit tests that can be run.  To begin SSH back into the vagrant server and return to the intouch-wishlist directory
+This application has a series of unit tests that can be run.  To begin SSH back into the vagrant server and return to the app directory
 
 ```
 vagrant ssh
-cd intouch-wishlist
+cd app
 ```
 
 Shutdown the currently running node server (Ctrl-C) and start up the server with the test environment variable
