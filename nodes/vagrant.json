@@ -1,0 +1,8 @@
+{
+ "run_list": [
+     "recipe[nodejs]",
+    "recipe[mongodb]",
+    "recipe[git]"
+  ]
+}
+
