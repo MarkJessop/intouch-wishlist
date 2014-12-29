@@ -14,8 +14,9 @@ vagrant up
 vagrant ssh
 cd app
 ```
-- Start the node server
+- Seed the db with data and start the node server
 ```
+npm seed
 npm start
 ```
 
